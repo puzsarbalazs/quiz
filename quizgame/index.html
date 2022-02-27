@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HW_8</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="screen">
+  <header>
+    <div>
+      <button type="button" onclick="newGame()" id="ng" class="newgame">Start new game</button>
+      <button type="button" onclick="skip()" id="skip" class="flt-left">Skip question</button>
+    </div>
+  </header>
+  <main id="qna">
+    <section >
+      <div id="question"></div>
+    </section>
+    <section>
+      <button type="button" id="ans1" class="answer" onclick="answer(0)"></button>
+      <button type="button" id="ans2" class="answer" onclick="answer(1)"></button>
+      <button type="button" id="ans3" class="answer" onclick="answer(2)"></button>
+      <button type="button" id="ans4" class="answer" onclick="answer(3)"></button>
+    </section>
+  </main>
+  <section id="loser">
+    <div> vesztetetél</div>
+</section>
+  <footer id="prizes">
+    <div>
+      <div>Total prize: <span id="allprize"></span></div>
+      <div>Prize on current round: <span id="roundprize"></span></div>
+    </div>
+  </footer>
+  <p id="kerdes"></p>
+  <script src="js/questions.js"></script>
+  <script src="js/app.js"></script>
+  </body>
+</html>
